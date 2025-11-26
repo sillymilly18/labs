@@ -34,3 +34,6 @@ void print_client_deals(const DealList *dl, int client_id);
 void print_deals_by_status(const DealList *dl, DealStatus st);
 void print_deals_menu(const ClientList *clients, DealList *deals);
 
+void flush_all_menu_option(ClientList *clients, DealList *deals);
+void load_all_menu_option(ClientList *clients, DealList *deals);
+void save_all_menu_option(const ClientList *clients, const DealList *deals);

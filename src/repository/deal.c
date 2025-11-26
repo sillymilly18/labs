@@ -1,14 +1,8 @@
 #include "deal.h"
-#include "utils.h"
-#include "input.h"
 #include <stdlib.h>
 
-void init_deals_list(DealList *dl) {
-  dl->data = NULL;
-  dl->count = 0;
-  dl->capacity = 0;
-  dl->next_id = 1;
-}
+#include "input.h"
+#include "utils.h"
 
 int ensure_deal_list_capacity(DealList *list, const size_t needed){
   if (list->capacity >= needed) return 1;

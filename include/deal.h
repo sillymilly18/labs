@@ -28,8 +28,7 @@ typedef struct DealList {
     int     next_id;
 } DealList;
 
-/* Инициализация/очистка */
-void init_deals_list(DealList *dl);
+// Высвобождение памяти
 void free_deal(const Deal *d);
 void free_deals_list(DealList *dl);
 

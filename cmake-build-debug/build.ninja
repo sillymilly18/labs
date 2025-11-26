@@ -97,6 +97,14 @@ build CMakeFiles/crm_light.dir/src/repository/client.c.o: C_COMPILER__crm_light_
   OBJECT_DIR = CMakeFiles/crm_light.dir
   OBJECT_FILE_DIR = CMakeFiles/crm_light.dir/src/repository
 
+build CMakeFiles/crm_light.dir/src/repository/file.c.o: C_COMPILER__crm_light_unscanned_Debug /Users/defany/projects/silly_milly/laba_2/src/repository/file.c || cmake_object_order_depends_target_crm_light
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/crm_light.dir/src/repository/file.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -fcolor-diagnostics
+  INCLUDES = -I/Users/defany/projects/silly_milly/laba_2/include
+  OBJECT_DIR = CMakeFiles/crm_light.dir
+  OBJECT_FILE_DIR = CMakeFiles/crm_light.dir/src/repository
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target crm_light
@@ -105,7 +113,7 @@ build CMakeFiles/crm_light.dir/src/repository/client.c.o: C_COMPILER__crm_light_
 #############################################
 # Link the executable crm_light
 
-build crm_light: C_EXECUTABLE_LINKER__crm_light_Debug CMakeFiles/crm_light.dir/src/main.c.o CMakeFiles/crm_light.dir/src/input.c.o CMakeFiles/crm_light.dir/src/repository/deal.c.o CMakeFiles/crm_light.dir/src/utils.c.o CMakeFiles/crm_light.dir/src/console.c.o CMakeFiles/crm_light.dir/src/repository/client.c.o
+build crm_light: C_EXECUTABLE_LINKER__crm_light_Debug CMakeFiles/crm_light.dir/src/main.c.o CMakeFiles/crm_light.dir/src/input.c.o CMakeFiles/crm_light.dir/src/repository/deal.c.o CMakeFiles/crm_light.dir/src/utils.c.o CMakeFiles/crm_light.dir/src/console.c.o CMakeFiles/crm_light.dir/src/repository/client.c.o CMakeFiles/crm_light.dir/src/repository/file.c.o
   CONFIG = Debug
   FLAGS = -g -arch arm64
   OBJECT_DIR = CMakeFiles/crm_light.dir

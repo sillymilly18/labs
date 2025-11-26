@@ -15,5 +15,7 @@ add_executable(crm_light
         src/console.c
         include/utils.h
         src/repository/client.c
+        src/repository/file.c
+        include/file.h
         # ← новый модуль
 )

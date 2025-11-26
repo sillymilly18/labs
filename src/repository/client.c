@@ -2,13 +2,6 @@
 #include "utils.h"
 #include <stdlib.h>
 
-void init_clients_list(ClientList *list) {
-    list->data = NULL;
-    list->count = 0;
-    list->capacity = 0;
-    list->next_id = 1;
-}
-
 int ensure_client_list_capacity(ClientList *list, const size_t needed) {
     if (list->capacity >= needed) return 1;
 

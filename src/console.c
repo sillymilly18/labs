@@ -6,6 +6,7 @@
 
 #include "input.h"
 #include "client.h"
+#include "file.h"
 #include "deal.h"
 #include "utils.h"
 
@@ -400,4 +401,31 @@ void print_deals_menu(const ClientList *clients, DealList *deals) {
           return;
       }
     }
+}
+
+void save_all_menu_option(const ClientList *clients, const DealList *deals) {
+  if (!in_ask_yes_no("Вы уверены, что хотите сохранить данные?")) {
+    return;
+  }
+
+  save_all(clients, deals);
+  printf("Файл сохранен.");
+}
+
+void load_all_menu_option(ClientList *clients, DealList *deals) {
+  if (!in_ask_yes_no("Вы уверены, что хотите перезаписать текущие данные?")) {
+    return;
+  }
+
+  load_all(clients, deals);
+  printf("Загрузили данные из файла.");
+}
+
+void flush_all_menu_option(ClientList *clients, DealList *deals) {
+  if (!in_ask_yes_no("Вы уверены, что хотите удалить все данные?")) {
+    return;
+  }
+
+  flush_all(clients, deals);
+  printf("Данные удалены.");
 }

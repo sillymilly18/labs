@@ -20,8 +20,7 @@ typedef struct ClientList {
     int next_id;       // Счётчик ID
 } ClientList;
 
-// Инициализация и очистка памяти
-void init_clients_list(ClientList *list);
+// Высвобождение памяти
 void free_clients_list(ClientList *list);
 void free_client(const Client *c);
 
