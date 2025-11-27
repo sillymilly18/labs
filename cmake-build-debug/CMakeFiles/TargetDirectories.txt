@@ -1,3 +1,0 @@
-/Users/defany/projects/silly_milly/laba_2/cmake-build-debug/CMakeFiles/crm_light.dir
-/Users/defany/projects/silly_milly/laba_2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/defany/projects/silly_milly/laba_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
